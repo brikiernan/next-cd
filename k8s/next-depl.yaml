@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: next-cd-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: next-cd
+  template:
+    metadata:
+      labels:
+        app: next-cd
+    spec:
+      containers:
+        - name: next-cd
+          image: briankiernan/next-cd
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: next-cd-srv
+spec:
+  selector:
+    app: next-cd
+  ports:
+    - name: next-cd
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

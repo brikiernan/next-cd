@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Next.js Inside Docker!!!</h1>
+        <h1 className={styles.title}>Welcome to Next.js Inside Docker!!</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -25,7 +25,7 @@ export default function Home() {
 
           <a href='https://nextjs.org/learn' className={styles.card}>
             <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!!!</p>
+            <p>Learn about Next.js in an interactive course with quizzes.</p>
           </a>
 
           <a
