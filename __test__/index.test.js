@@ -6,7 +6,7 @@ describe('App', () => {
     render(<App />);
     expect(
       screen.getByRole('heading', {
-        name: 'Welcome to Next.js Inside Docker!!!'
+        name: 'Welcome to Next.js On Kubernetes'
       })
     ).toBeInTheDocument();
   });
